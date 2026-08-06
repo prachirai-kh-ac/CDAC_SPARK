@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+        .header {
+            background-color: #2563eb;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .header p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px 30px;
+            color: #333333;
+            line-height: 1.6;
+        }
+        .content p {
+            margin: 0 0 15px;
+            font-size: 16px;
+        }
+        .otp-container {
+            text-align: center;
+            margin: 35px 0;
+        }
+        .otp-box {
+            display: inline-block;
+            background-color: #eff6ff;
+            color: #1d4ed8;
+            font-size: 38px;
+            font-weight: bold;
+            padding: 15px 40px;
+            border-radius: 8px;
+            letter-spacing: 5px;
+            border: 2px dashed #bfdbfe;
+        }
+        .validity {
+            text-align: center;
+            color: #64748b;
+            font-size: 14px;
+            margin-top: -15px;
+            margin-bottom: 30px;
+        }
+        .security-notice {
+            background-color: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #78350f;
+        }
+        .security-notice p {
+            margin: 0 0 10px;
+            font-weight: 600;
+        }
+        .security-notice ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .security-notice li {
+            margin-bottom: 5px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8fafc;
+            color: #94a3b8;
+            font-size: 13px;
+            border-top: 1px solid #e2e8f0;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CDAC Spark</h1>
+            <p>Adaptive Assessment System</p>
+        </div>
+        
+        <div class="content">
+            <p>Hello,</p>
+            <p>We received a request to reset the password for your CDAC Spark account. Use the OTP below to complete the process:</p>
+            
+            <div class="otp-container">
+                <div class="otp-box">{{OTP}}</div>
+            </div>
+            
+            <p class="validity">This OTP is valid for <strong>5 minutes</strong>.</p>
+            
+            <div class="security-notice">
+                <p>Security Notice:</p>
+                <ul>
+                    <li>Never share your OTP with anyone.</li>
+                    <li>Your password will remain unchanged until the OTP is successfully verified.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>CDAC Spark</strong> | Adaptive Assessment System</p>
+            <p>&copy; 2026 CDAC Spark. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

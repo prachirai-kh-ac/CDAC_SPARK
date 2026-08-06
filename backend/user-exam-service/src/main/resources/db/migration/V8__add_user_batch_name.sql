@@ -1,0 +1,1 @@
+ALTER TABLE user ADD COLUMN batch_name VARCHAR(255);
