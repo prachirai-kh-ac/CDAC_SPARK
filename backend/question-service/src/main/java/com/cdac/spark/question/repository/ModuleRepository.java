@@ -1,5 +1,12 @@
 package com.cdac.spark.question.repository;
 
+import com.cdac.spark.question.entity.Module;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface ModuleRepository {
+import java.util.Optional;
+
+@Repository
+public interface ModuleRepository extends JpaRepository<Module, Long> {
+    Optional<Module> findByModuleNameIgnoreCase(String moduleName);
 }

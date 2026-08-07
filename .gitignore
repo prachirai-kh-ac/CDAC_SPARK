@@ -1,48 +1,29 @@
-# Node.js / Frontend
-node_modules/
-npm-debug.log
-yarn-error.log
-yarn-debug.log
-dist/
-build/
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Java / Maven (Backend)
-target/
-bin/
-*.class
-*.jar
-*.war
-*.ear
-*.nar
+# Log files
 *.log
-hs_err_pid*
 
-# IDEs
-.idea/
-*.iml
-*.iws
-.vscode/
+# Eclipse / STS workspace & metadata
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
 .settings/
 .classpath
 .project
 .factorypath
-*.sublime-workspace
-*.sublime-project
 
-# OS / Misc
+# Maven
+target/
+
+# Node / Frontend
+node_modules/
+dist/
+.output/
+
+# OS / IDE
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
-
-# Local secrets/config (if you create these later)
-application-local.yml
-application-*.local.yml
+.vscode/
