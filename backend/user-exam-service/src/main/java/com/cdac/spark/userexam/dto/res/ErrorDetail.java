@@ -13,3 +13,4 @@ public class ErrorDetail {
     private int row;
     private String message;
 }
+
